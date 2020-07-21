@@ -17,7 +17,7 @@ public class Reg {
 		WebDriverManager.chromedriver().setup();
 		// TODO Auto-generated method stub
 		WebDriver driver=new ChromeDriver();
-		driver.manage().window().maximize();
+		// driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 		driver.get("http://magento.com");
 		driver.findElement(By.xpath("//*[@id=\"block-header\"]/ul/li[9]/a/span[1]/div")).click();
